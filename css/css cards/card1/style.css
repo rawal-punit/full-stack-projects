@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img.webp) center center/cover;
+    height: 100vh;
+    
+}
+
+.container{
+
+    max-width: 1140px;
+    margin: 0 350px;
+    gap: 20px;
+   
+}
+
+img{
+    width: 100%;
+    display: inline-block;
+}
+
+section{
+    margin-top: 96px;
+   
+}
+
+.card{
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.card img{
+    min-height: 209.8px;
+}
+
+.date{
+    padding: 20px;
+    text-align: center;
+}
+
+h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.p1{
+    color: gray;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.red{
+    color: red;
+}
+
+.darkorange{
+    color: orange;
+}
+
+.darkgreen{
+    color: green;
+}

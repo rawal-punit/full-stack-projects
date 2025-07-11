@@ -1,0 +1,15 @@
+.demo> .hello , .demo2 .hello{
+  color: aqua;
+}
+
+.demo + .hello{
+    font-size: 30px;
+}
+
+.demo ~ .hello{
+    font-size: 30px;
+}
+
+.demo .demo2 + .hello{
+    font-size: 30px;
+}

@@ -1,0 +1,49 @@
+body{
+    background-color: lightgreen;
+}
+
+
+/* font-size */
+
+.font-size .p1{
+    font-size: 25px;
+    color: darkmagenta;
+}
+
+.font-size .p2{
+    font-size: 30px;
+    color: darkorange;
+}
+
+.font-size .p3{
+    font-size: 35px;
+    color: deeppink;
+}
+
+.text-align .p1{
+    text-align: right;
+    color: red;
+}
+
+/* text-align */
+
+.text-align .p2{
+    text-align: left;
+    color: blue;
+}
+
+.text-align .p3{
+    text-align: center;
+    color: brown;
+}
+
+.text-align .p4{
+    text-align: justify;
+    color: darkgoldenrod;
+}
+
+
+
+
+
+ 

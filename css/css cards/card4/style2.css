@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+
+.container {
+    margin: 0;
+    max-width: 1140px;
+
+}
+
+
+img {
+   width: 100%;
+    display: block;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*    */
+.demo {
+    margin: 150px 650px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    padding-bottom: 30px;
+    /* text-align: center; */
+    display: inline-block;
+}
+
+.demo .item h2 {
+    margin-top: 25px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.demo .item .demo-img {
+    width: 23%;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -60px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(182, 19, 211, 0.3);
+    
+    /* border-radius: 50px; */
+}
+
+.demo .item p {
+    padding-top: 10px;
+    /* display: inline-block; */
+    font-weight: bold;
+
+}
+
+.demo .item p .loc {
+    color: #2196f3;
+}
+
+.demo .no p {
+    display: inline-block;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+
+}
+
+.demo .no {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #555;
+}
+
+.demo .icon .a1 {
+    margin: 16px;
+    font-size: 25px;
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.demo .icon .a2 {
+    margin: 16px;
+    font-size: 25px;
+    color: white;
+    background: linear-gradient(purple, rgb(222, 41, 71), orangered, red, yellow);
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.demo .icon .a3 {
+    margin: 16px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #2196f3;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.demo .icon .a4 {
+    margin: 16px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.demo .icon .a5 {
+    margin: 16px;
+    font-size: 25px;
+    color: white;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.demo .icon a:hover {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    ;
+    border-radius: 20px;
+}
+
+.demo .item .btn1 {
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #2196f3;
+    color: black;
+    font-weight: bold;
+}
+
+.demo .item .btn2 {
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    color: black;
+    font-weight: bold;
+}
+
+.demo .item .btn:hover {
+    color: white;
+}

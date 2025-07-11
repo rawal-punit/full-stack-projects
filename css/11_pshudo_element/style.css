@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p1{
+    background-color: aqua;
+   height: 340px;
+   width: 340px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.p1 .box{
+   height: 120px;
+   width: 120px;
+}
+.p1 .box1{
+   background-color: green;
+   position: absolute;
+   right: 0;
+   top: 0;
+
+}
+
+.p1 .box2{
+   background-color: yellow;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+
+}
+
+.bfaf{
+    background-color: aqua;
+    height: 340px;
+    width: 340px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.bfaf::before{
+    content: "b1";
+    position: absolute;
+    background-color: green;
+    height: 120px;
+    width: 120px;
+     top: 0;
+    right: 0;
+}
+
+.bfaf::after{
+     content: "b2";
+    position: absolute;
+    background-color:yellow;
+    height: 120px;
+    width: 120px;
+     bottom:  0;
+    left: 0;
+}
+
+ .d1{
+    text-align: center;
+ }
+.d1 h2{
+    margin-bottom: 95px;
+    color: darkorange;
+    text-align: center;
+    font-size: 48px;
+    position: relative;
+    display: inline-block;
+}
+
+.d1 h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 56px;
+    background-color: darkorange;
+    top: 27px;
+    left:-60px;
+}
+
+.d1 h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 56px;
+    background-color: darkorange;
+    top: 27px;
+    right:-60px;
+}
+
+

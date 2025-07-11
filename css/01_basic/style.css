@@ -1,0 +1,29 @@
+
+        .h {
+            color: yellow; 
+            font-size: 35px;
+        }
+
+         #hey {
+            color: aqua;
+            font-size: 45px;
+            background-color: blue;
+         }   
+            body{
+                background-color:darkgreen;
+                text-align: center;
+            }
+        
+            .p1{
+                color: blue;
+                
+            }
+            .p2{
+                color: blueviolet;
+            }
+            .p3{
+                color: chartreuse;
+            }
+            .p4{
+                color: crimson;
+            }

@@ -1,0 +1,118 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .container{
+    margin: 0;
+    max-width: 1140px;
+    
+ }
+
+ img{
+    width: 100%;
+    display: block;
+ }
+
+ a{
+    display: inline-block;
+    text-decoration: none;
+ }
+
+ /* ===== */
+ body{
+    background-color: blue;
+    
+ }
+ .card{
+    /* background-color: blue; */
+   width: 100%;
+   
+ }
+ .card .container{
+    margin:  150px 600px;
+    width: 500px;
+    background-color: white;
+ }
+
+ .card .card-item{
+    padding: 30px;
+    /* background-color: aqua; */
+ }
+
+ .card .card-item h1{
+   margin-top: 30px;
+    position: relative;
+    
+   
+ }
+ .card .card-item span{
+   margin: 0px 350px;
+    display: inline-block;
+    color: blue;
+    font-size: 25px;
+ }
+
+ .card .card-item p{
+    padding: 5px;
+    display: inline-block;
+ }
+ .card .card-item .size h2{
+    padding: 10px;
+ }
+
+ .card .card-item .color h3{
+    padding: 10px;
+ }
+ .card .card-img{
+    width: 80%;
+    margin-left: 50px;
+    /* height: 300px; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow : rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* margin-top: -60px; */
+ }
+.card .card-item .color .grey{
+   border-radius: 50%;
+   border: none;
+   width: 16px;
+   height: 16px;
+   background-color: gray;
+   margin: 0 10px;
+}
+
+.card .card-item .color .blue{
+   border-radius: 50%;
+    border: none;
+   width: 16px;
+   height: 16px;
+   background-color: blue;
+    margin: 0 10px;
+}
+
+
+.card .card-item .color .orange{
+   border-radius: 50%;
+    border: none;
+  width: 16px;
+   height: 16px;
+   background-color: orange;
+    margin: 0 10px;
+}
+ .card .card-item a{
+    padding: 15px 40px;
+    margin: 10px 20px;
+ }
+ .card .card-item .btn{
+    background-color: blue;
+    color: white;
+    font-weight: bold
+ }
+ .card .card-item .btn1{
+    border: solid blue;
+    font-weight: bold;
+    color: blue;
+ }

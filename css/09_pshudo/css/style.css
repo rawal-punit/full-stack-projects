@@ -1,0 +1,61 @@
+.container{
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+.btn{
+    color: black;
+    background-color: orange;
+    padding: 16px 48px;
+    border: 2px solid black;
+   
+}
+.btn1:active{
+    color: red;
+    background-color: blue;
+}
+.btn2:focus{
+    color:pink;
+    background-color:aqua;
+}
+.btn3:hover{
+    color:cyan;
+    background-color: green;
+    height: 60px;
+    width: 100px;
+    border-radius: 15px;
+   
+   
+ 
+   
+}
+
+.sudo_class{
+    margin-top: 96px;
+}
+/* part2 */
+
+.part2 ul li:first-child{
+     color: aqua;
+
+}
+.part2 ul li:last-child{
+     color: blue;
+
+}
+.part2 ul li:nth-child(3){
+     color:green;
+
+}
+.part2 ul li:nth-child(4){
+     color:gray;
+
+}
+
+
+
