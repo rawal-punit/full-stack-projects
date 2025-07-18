@@ -5,14 +5,37 @@
 }
 
 body{
-    background-color:aqua;
+    background-color:gray;
     display: flex;
+    flex-direction: row;
+    /* direction:row:width  direction:row:height  */
     /* width */
     justify-content: center;
 
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+   
+
+
     /* height */
-    align-items: center;
+     /* direction:row:height  direction:row:width  */
+    align-items: end;
     height: 100vh;
+    /* align-items: start; */
+    /* align-items: center; */
+    
+
+/*     */
+
+    /* align-content: start; */
+    /* align-content: center; */
+    /* align-content: end; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
 }
 
 

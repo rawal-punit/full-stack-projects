@@ -28,6 +28,8 @@ a{
 
     /*  */
     /* flex-direction: column */
+    /* flex-direction: row-reverse; */
+    
 }
 
 .row{
@@ -52,7 +54,7 @@ a{
      /* padding: 5px; */
 }
 
-.card .card-item{
+.card .card-item {
     height: 420px;
     margin: 10px;
     padding: 5px; 
@@ -60,3 +62,6 @@ a{
 
 }
 
+.c1{
+    background-color: aqua;
+}
