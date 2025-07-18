@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:aqua;
+    display: flex;
+    /* width */
+    justify-content: center;
+
+    /* height */
+    align-items: center;
+    height: 100vh;
+}
+
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}
