@@ -5,11 +5,11 @@
 }
 
 body {
-    background: url(hero-bg.jpg) no-repeat center center/cover;
+    /* background: url(hero-bg.jpg) no-repeat center center/cover;
 
     object-fit: cover;
-    height: 100vh;
-    width: 100%;
+    height: 30vh;
+    width: 100%; */
 }
 
 .a1:hover {
@@ -19,12 +19,15 @@ body {
     border-radius: 10px;
 
 }
+.nav .demo{
+    margin-bottom: 500px;
+}
 
-ul li {
+.p0 .nav li {
     list-style-type: none;
     display: inline;
     padding: 10px;
-    margin: 12px;
+    margin-top: 200px;
 }
 
 .p0 {
@@ -60,8 +63,9 @@ i {
 h1{
     font-size: 40px;
     margin-bottom: -145px;
+    margin-left: 200px;
     font-weight: bold;
-   /* color: white; */
+   color: white;
    font-family: cursive
    
 }
@@ -70,7 +74,8 @@ p{
     margin-top: 160px;
     /* text-align: justify; */
     width: 30%;
-    /* color: white; */
+    color: white;
+    margin-left: 200px;
 }
 
 .btn1{
@@ -79,13 +84,15 @@ p{
     padding: 10px 45px;
     margin-top: 20px;
     border-radius: 45px;
-    color: white;
+    /* color: white; */
     text-decoration: none;
+    margin-left: 200px;
 }
 
 .b1{
     width: 100%;
     height: 40px;
-    color: white;
+    color: black;
     text-align: center;
+    margin-top: 180px;
 }
