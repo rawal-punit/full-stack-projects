@@ -19,8 +19,55 @@ img{
     display: block;
 }
 
-.w-25{
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+
+.col-3{
     width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+
+.col-6{
+    width: 50%;
+}
+
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.32%;
+}
+
+.col-11{
+    width: 91.65%;
+}
+
+.col-12{
+    width: 100%;
 }
  
 .d-flex{
@@ -36,20 +83,20 @@ a{
     text-align: center;
     margin: 300px; 
 }
-
+/* 
 .card .container{
-    /* display: flex;
-    flex-wrap: wrap; */
-}
+    display: flex;
+    flex-wrap: wrap;
+} */
 
-.card .w-25 .card-item h2{
+.card  .card-item h2{
     padding-bottom: 10px;
     font-size: 30px;
     
 
 }
 
-.card .w-25 .card-item .card-img{
+.card .card-item .card-img{
     height: 277.92px;
    /* background-color:goldenrod; */
     /* display: inline-block; */
@@ -58,13 +105,13 @@ a{
    overflow: hidden;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.card .w-25 .card-item .card-img img{
+.card .card-item .card-img img{
     height: 100%;
     object-fit: cover;
     /* object-position: t; */
 }
 
-.card .w-25 .card-item{
+.card .card-item{
    background-color:goldenrod;
     /* display: inline-block; */
     margin: 20px 16px;
@@ -72,7 +119,7 @@ a{
    overflow: hidden;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.card .w-25 .card-item p{
+.card .card-item p{
     padding-bottom: 16px;
 }
 
@@ -82,17 +129,17 @@ a{
 }
 
 
-.card .w-25 .card-item .fill-rating{
+.card .card-item .fill-rating{
     color: yellow;
     padding-bottom: 20px;
 }
 
 
-.card .w-25 .card-item .blank-rating{
+.card .card-item .blank-rating{
     color: black;
 }
 
-.card .w-25 .card-item a{
+.card .card-item a{
     display: block;
     background-color: orangered;
     /* padding-top: 20px; */

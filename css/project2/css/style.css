@@ -1,49 +1,784 @@
 /* header */
 
-header .container{
-    background-color: rgb(55, 48, 48);
-    padding: 34px 48px;
+header .container {
+    /* background-color: rgb(55, 48, 48); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* padding: 10px; */
 
 }
 
-header .logo{
-    font-size: 50px;
-     font-family: "Nunito", sans-serif;
-     font-weight: 900;
-   
+
+header .logo {
+    font-size: 25px;
+    font-family: var(--font-nunito);
+    font-weight: 900;
+    padding: 0 48px;
+
 }
 
-header .logo a{
-    color: orange;
+header .logo .icon {
+    color: var(--orange-700);
+    font-size: 30px;
 }
 
-header nav{
+header .logo a {
+    color: var(--orange-700);
+}
+
+header nav {
     margin-left: auto;
+    padding: 0 48px;
 }
 
-header nav ul li a{
-    color: white;
-    font-size: 19px;
+header nav ul li a {
+    color: var(--white-900);
+    font-size: 16px;
     font-weight: 600;
-     font-family: "Heebo", sans-serif;
+    font-family: var(--font-nunito);
+    padding: 35px 12.5px;
+
 }
 
-header nav ul li .a1{
+header nav ul li:first-child a {
+    color: var(--orange-700);
+}
+
+header nav ul a:hover {
+    color: var(--orange-700);
+    /* text-decoration: underline solid black 2px; */
+    /* text-underline-offset: 3px; */
+}
+
+header nav ul li {
+    margin-right: 16px;
+}
+
+header nav ul+a {
+    background-color: var(--orange-700);
+    color: var(--white-900);
+    padding: 8px 24px;
+    font-size: 18px;
+    border-radius: 2px;
+    font-family: var(--font-nunito);
+}
+
+
+
+
+/* main */
+main .container {
+    /* background: #0F172B; */
+    background: linear-gradient(90deg, rgba(15, 23, 43, 0.75) 0%, rgba(15, 23, 43, 0.75) 91%), url(../img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+main .main-content h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    font-family: var(--font-nunito);
+    color: var(--white-900);
+    padding-left: 24px;
+
+}
+
+main .main-content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white-900);
+    padding-left: 24px;
+    font-family: var(--font-nunito);
+    margin-bottom: 24px;
+}
+
+main .main-content a {
+    background-color: var(--orange-700);
+    color: var(--white-900);
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 2px;
+    font-family: var(--font-nunito);
+    margin-left: 24px;
+
+}
+
+main .main-img {
+    margin-top: 60px;
+    padding: 60px;
+}
+
+main .main-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: rotate360 30s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotate(0deg);}
+
+    to {
+        transform: rotate(360deg);}
+}
+
+
+/* service */
+
+.service div {
+    background-color: var(--white-900);
+}
+
+.service .service-card {
+    padding: 48px 24px;
+    font-family: var(--font-nunito);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 45px;
+    border-radius: 2px;
+    margin: 50px 16px;
+    /* background-color: var(--white-900); */
+}
+
+.service .service-card .icon {
+    color: var(--orange-700);
+}
+
+.service .service-card h2 {
+    font-weight: 800;
+    /* margin: 20px 0px 5px 0; */
+}
+
+.service .service-card p {
+    color: var(grey);
+}
+
+.service .service-card:hover {
+    background-color: var(--orange-700);
+    color: var(--white-900);
+    transition: 0.5s;
+}
+.service .service-card:hover .icon{
+     color: var(--white-900);
+
+}
+
+
+
+/* about img */
+
+.aboutus div {
+    background-color: var(--white-900);
+}
+
+.aboutus .row {
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.aboutus .row .about-card {
+    padding: 8px 0;
+
+}
+
+
+.aboutus .row .about-card .img1 {
+    height: 290px;
+    width: 280px;
+    margin-left: 5px;
+}
+
+.aboutus .row .about-card .img2 {
+    height: 220px;
+    width: 220px;
+    margin: 70px 0 0px 20px;
+}
+
+.aboutus .row .about-card .img3 {
+    height: 220px;
+    width: 220px;
+    margin: 0px 65px;
+}
+
+.aboutus .row .about-card .img4 {
+    height: 290px;
+    width: 280px;
+    margin: 0px 0 0px 20px;
+
+}
+
+
+/* about msg*/
+
+.aboutus .about-msg {
+    margin: 100px 100px;
+}
+
+.aboutus .about-msg .font {
+    font-family: var(--font-pacifico);
+    font-size: 23px;
+    color: var(--orange-700);
+}
+
+.aboutus .about-msg .font::after {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 20px 0 0px 10px;
+}
+
+.aboutus .about-msg h1 {
+    font-size: 40px;
+}
+
+.aboutus .about-msg .icon {
     color: orange;
 }
 
-header nav ul a:hover{
-     color: orange;
-}
-header nav ul li{
-    margin-right:25px ;
+.aboutus .about-msg p {
+    color: var(--grey);
 }
 
-header nav ul + a{
-    background-color: orange;
-    color: white;
-    padding: 8px 24px;
-    font-size: 20px;
-    border-radius: 2px;
-     font-family: "Nunito", sans-serif;
+.aboutus .about-msg .number .card-msg {
+    margin: 24px 0;
+    border-left: 5px solid var(--orange-700);
+
 }
+
+.aboutus .about-msg .card-msg h1 {
+    margin-left: 20px;
+    font-size: 45px;
+    color: var(--orange-700);
+}
+
+.aboutus .about-msg .card-msg .year {
+    margin: 10px 20px;
+}
+
+.aboutus .about-msg .card-msg .year p {
+    color: var(--grey);
+    font-size: 16px;
+
+}
+
+.aboutus .about-msg .card-msg .year h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.aboutus .about-msg a {
+    background-color: var(--orange-700);
+    color: var(--white-900);
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 2px;
+    font-family: var(--font-nunito);
+    /* margin-left: 24px; */
+
+}
+
+/* menu */
+
+.menu div {
+    background-color: var(--white-900);
+}
+
+.menu {
+    padding-top: 50px;
+}
+
+.menu .menu-header {
+    text-align: center;
+}
+
+.menu .menu-header h5 {
+    font-size: 20px;
+    font-family: var(--font-pacifico);
+    color: var(--orange-700);
+}
+
+.menu .menu-header h5::before {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 -60px;
+}
+
+.menu .menu-header h5::after {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 15px;
+}
+
+.menu .menu-header h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.menu .menu-nav i {
+    color: var(--orange-700);
+    font-size: 32px;
+}
+
+.menu .menu-nav span {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.menu .menu-nav p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.menu .menu-nav {
+    text-align: center;
+
+}
+
+.menu .menu-nav>div {
+    border-bottom: 2px solid var(--gwhite);
+    margin: 16px auto;
+}
+
+.menu .menu-nav .menu-nav-active {
+    border-bottom: 3px solid var(--orange-700);
+}
+
+.menu .menu-nav div div {
+    padding: 0 16px;
+}
+
+/* menu-item */
+.menu-list {
+    padding-left: 15px;
+}
+
+.menu-list .menu-item-info {
+    padding: 16px;
+
+}
+
+.menu-list .menu-item-info div {
+    border-bottom: 2px solid var(--gwhite);
+    margin-bottom: 8px;
+}
+
+.menu-list .menu-item-info div .y {
+    color: var(--orange-700);
+    font-size: 24px;
+}
+
+.menu-list .menu-item-info span {
+    color: var(--grey);
+}
+
+
+/* Reservation */
+
+
+.reservation {
+    margin-bottom: 96px;
+
+}
+
+.reservation .reservation-video {
+    background: url(../img/video.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    position: relative;
+}
+
+.reservation .reservation-video .play {
+    background-color: var(--orange-700);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    right: 280px;
+}
+
+.reservation .reservation-video .play .sym {
+    margin: 30px 27px;
+    font-size: 40px;
+}
+
+.reservation .reservation-form h5 {
+    color: orange;
+    font-size: 20px;
+    font-family: var(--font-pacifico);
+}
+
+.reservation .reservation-form h5::after {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 15px;
+}
+
+.reservation .reservation-form h2 {
+    color: var(--white-900);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.reservation .reservation-form {
+    background-color: #0F172B;
+    padding: 43px;
+    margin-top: 98px;
+}
+
+.reservation .reservation-form form input,
+.reservation .reservation-form form textarea,
+.reservation .reservation-form form select {
+    width: 100%;
+    margin: 8px 10px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.reservation .reservation-form form div {
+    padding-right: 20px;
+}
+
+.reservation .reservation-form .btn {
+    background-color: var(--orange-700);
+    border: none;
+    border-radius: 2px;
+    color: var(--white-900);
+    font-size: 18px;
+}
+
+/* team */
+
+.team .team-header {
+    text-align: center;
+    margin-top: -90px;
+}
+
+.team .team-header h4 {
+    font-size: 20px;
+    color: var(--orange-700);
+    font-family: var(--font-pacifico);
+}
+
+.team .team-header h4::before {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 -60px;
+}
+
+.team .team-header h4::after {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 15px;
+}
+
+.team .team-header h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+
+
+.team .team-member .member-info {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    padding: 20px 20px 0 20px;
+    border-radius: 2px;
+    text-align: center;
+    /* transition: 0.5s; */
+    height: calc(100% - 35px);
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.team .team-member .member-info:hover {
+    height: 100%;
+    transition: 0.5s;
+}
+
+.team .team-member .member-info .member-profile {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team .team-member .member-info .member-profile img {
+    transition: 0.5s;
+}
+
+.team .team-member .member-info:hover .member-profile img {
+    transform: scale(1.2) translateY(20px);
+}
+
+.team .team-member .member-info h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.team .team-member .member-info p {
+    margin-bottom: 32px;
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.team .team-member .member-info .member-social i {
+    color: var(--white-900);
+
+}
+
+.team .team-member .member-info .member-social div {
+    height: 32px;
+    width: 32px;
+    background-color: var(--orange-700);
+    margin: 0 4px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    line-height: 32px;
+
+}
+
+/* client */
+
+.client .client-header {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.client .client-header h4 {
+    font-size: 20px;
+    color: var(--orange-700);
+    font-family: var(--font-pacifico);
+}
+
+.client .client-header h4::before {
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 -60px;
+}
+
+.client .client-header h4::after{
+     position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 15px;
+}
+
+.client .client-header h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+.client .client-review .review-item{
+    border: 1px solid var(--gwhite);
+    margin: 12px;
+    padding: 27px;
+
+
+}
+
+.client .client-review .review-item i{
+ color: var(--orange-700);
+ font-size: 40px;
+ padding: 0 0 12px 0;
+}
+
+.client .client-review .review-item p{
+    margin-bottom: 20px;
+    /* color: var(--grey); */
+}
+
+.client .client-review .review-item .client-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client .client-review .review-item .client-name{
+    margin-left: 20px;
+}
+
+.client .client-review .review-item .client-name h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.client .client-review .review-item .client-name h4{
+    font-size: 14px;
+    /* color: var(--grey); */
+}
+
+.client .client-review .review-item:hover{
+    background-color: var(--orange-700);
+    color: white;
+    transition: 0.5s;
+}
+
+.client .client-review .review-item:hover i{
+    color: var(--white-900);
+}
+
+
+/* FOOTER */
+
+footer .container{
+    background-color: #0F172B;
+    margin-top: 100px;
+    padding: 100px 50px 0 20px;
+}
+
+footer h3{
+    font-size: 24px;
+    color: var(--orange-700);
+    font-family: var(--font-pacifico);
+    margin-bottom: 20px;
+}
+
+footer h3::after{
+    position: absolute;
+    content: "";
+    background-color: var(--orange-700);
+    height: 2.5px;
+    width: 45px;
+    margin: 19px 0px 0 15px;
+}
+
+footer .company-info a{
+    display: block;
+    color: var(--white-900);
+    /* margin-bottom: 15px; */
+    margin: 5px 0 0px 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer .company-info a:hover{
+   /* margin: 0 20px; */
+   font-size: 18px;
+   transition: 0.5s;
+}
+
+footer .contact-info p{
+    margin: 8px 0;
+    color: var(--white-900);
+    font-size: 16px;
+}
+
+footer .contact-info p i{
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+footer .social-media a{
+    margin: 15px 2px;
+    color: var(--white-900);
+    font-weight: 500;
+}
+
+footer .social-media a i{
+    font-size: 20px;
+    border: 1px solid var(--white-900);
+    border-radius: 50%;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+footer .social-media a i:hover{
+    background-color: var(--gwhite);
+    color: var(--orange-700);
+}
+
+footer .opening-info h4{
+    color: var(--white-900);
+   font-size: 20px;
+   padding-bottom: 5px;
+   font-weight: 400;
+}
+
+footer .opening-info p{
+    color: var(--white-900);
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+footer .newsletter-info p{
+color: var(--white-900);
+width: 90%;
+padding-bottom: 20px;
+}
+
+footer .newsletter-info input{
+    padding: 20px 50px;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid var(--orange-700);
+}
+
+footer .newsletter-info button{
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 9px;
+    padding: 13px;
+    background-color: var(--orange-700);
+    border: none;
+    color: var(--white-900);
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+footer .info{
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--grey);
+}
+
+footer .sub-footer{
+    margin: 20px 0 20px 0;
+    color: var(--white-900);
+}
+
+footer .sub-footer .end div{
+    margin-left: 520px;
+}
+footer .sub-footer .end a{
+    color: var(--white-900);
+    padding-right: 10px;
+    border-right: 1px solid gray;
+    margin-left: 10px;
+}
+footer .sub-footer p{
+    padding-bottom: 20px;
+}
+
+
+

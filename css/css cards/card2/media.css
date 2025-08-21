@@ -1,0 +1,24 @@
+@media (max-width:1399px){
+.container {
+    max-width: 1140px;
+}
+.col-xl-4{
+    width: 33.33%;
+}
+}
+
+@media (max-width:1199px){
+    .container{ max-width: 960px;
+}
+.col-lg-6{
+    width: 50%;
+}
+}
+@media (max-width:991px){
+    .container {
+        max-width: 720px;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
