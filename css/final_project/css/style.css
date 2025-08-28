@@ -67,7 +67,6 @@ header nav ul+a {
 
 
 
-
 /* main */
 main .container {
     /* background: #0F172B; */
@@ -75,7 +74,9 @@ main .container {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+  
+
 }
 
 main .main-content h1 {
@@ -177,47 +178,29 @@ main .main-img img{
     background-color: var(--white-900);
 }
 
-.aboutus .row {
-    flex-wrap: wrap;
+.aboutus {
     margin-top: 48px;
 }
 
-.aboutus .row .about-card {
-    padding: 8px 0;
+.aboutus .about-galary .about-card {
 
+    padding: 10px;
 }
 
-
-.aboutus .row .about-card .img1 {
-    height: 290px;
-    width: 280px;
-    margin-left: 5px;
+.aboutus .about-galary .about-card.second img{
+    width: 75%;
+    margin-top: 25%;
 }
 
-.aboutus .row .about-card .img2 {
-    height: 220px;
-    width: 220px;
-    margin: 70px 0 0px 20px;
+.aboutus .about-galary .about-card.thired img{
+    width: 75%;
+    margin-left: auto;
 }
-
-.aboutus .row .about-card .img3 {
-    height: 220px;
-    width: 220px;
-    margin: 0px 65px;
-}
-
-.aboutus .row .about-card .img4 {
-    height: 290px;
-    width: 280px;
-    margin: 0px 0 0px 20px;
-
-}
-
 
 /* about msg*/
 
 .aboutus .about-msg {
-    margin: 100px 100px;
+padding: 48px;
 }
 
 .aboutus .about-msg .font {
@@ -390,7 +373,8 @@ main .main-img img{
 
 
 .reservation {
-    margin-bottom: 96px;
+    margin-top: 60px;
+    /* margin-bottom: 48px; */
 
 }
 
@@ -398,8 +382,12 @@ main .main-img img{
     background: url(../img/video.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 100vh; */
+    /* height: 84%; */
     position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .reservation .reservation-video .play {
@@ -407,9 +395,6 @@ main .main-img img{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    position: absolute;
-    top: 280px;
-    right: 280px;
 }
 
 .reservation .reservation-video .play .sym {
@@ -441,7 +426,7 @@ main .main-img img{
 .reservation .reservation-form {
     background-color: #0F172B;
     padding: 43px;
-    margin-top: 98px;
+    /* margin-bottom: 98px; */
 }
 
 .reservation .reservation-form form input,
@@ -451,6 +436,7 @@ main .main-img img{
     margin: 8px 10px;
     padding: 16px;
     font-size: 16px;
+    /* display: block; */
 }
 
 .reservation .reservation-form form div {
@@ -469,7 +455,8 @@ main .main-img img{
 
 .team .team-header {
     text-align: center;
-    margin-top: -90px;
+    /* margin-bottom: 50px; */
+    margin-top: 100px;
 }
 
 .team .team-header h4 {
@@ -737,24 +724,30 @@ width: 90%;
 padding-bottom: 20px;
 }
 
-footer .newsletter-info input{
-    padding: 20px 50px;
+footer .newsletter-info form input{
+    padding: 20px 90px 20px 12px;
     font-size: 15px;
-    position: relative;
     border-radius: 5px;
     border: 1px solid var(--orange-700);
+    width: 100%;
+    overflow: hidden;
 }
 
-footer .newsletter-info button{
+footer .newsletter-info form{
+    position: relative;
+    margin-right: 24px;
+}
+
+footer .newsletter-info form button{
     position: absolute;
-    margin-left: -90px;
-    margin-top: 9px;
     padding: 13px;
     background-color: var(--orange-700);
     border: none;
     color: var(--white-900);
     font-weight: 600;
     border-radius: 2px;
+    top: 8px;
+    right:8px;     ;
 }
 
 footer .info{
@@ -780,5 +773,18 @@ footer .sub-footer p{
     padding-bottom: 20px;
 }
 
-
+.back-to-top a{
+    color: var(--white-900);
+    background-color: var(--orange-700);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+}
+ 
 

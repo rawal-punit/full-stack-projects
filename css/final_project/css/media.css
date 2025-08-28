@@ -1,2 +1,83 @@
-@media max-width(
-)
+
+/* xl 1399 - 1200 */
+@media  (max-width:1399px) {
+    .container{
+        max-width: 1140px;
+    }
+
+    header .container{
+        max-width: 100%;
+    }
+    main .container{
+        max-width: 100%;
+    }
+    footer .container{
+        max-width: 100%;
+    }
+
+    .reservation .container{
+        max-width: 100%;
+    }
+}
+/* lg 1199 -992 */
+@media (max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+/* md */
+@media (max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+
+    .col-md-6{
+        width: 50%;
+    }
+
+    main .main-content{
+        padding-top: 50px;
+      text-align: center;
+
+    }
+
+    main .main-img{
+        padding: 95px;
+    }
+
+
+    .col-md-12{
+        width: 100%;
+    }
+
+    header {
+        background-color: var(--darkblue);
+        padding: 45px;
+    }
+
+    header nav{
+        display: none !important;
+    }
+
+    header nav + div.menu-icon{
+        display: block !important;
+    } 
+
+    footer .container{
+        padding-left: 50px;
+    }
+}
+
+/* sm */
+@media (max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+}
+/* xs */
+@media (max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+}
