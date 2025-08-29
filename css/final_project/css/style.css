@@ -133,10 +133,10 @@ main .main-img img{
 
 
 /* service */
-
+/* 
 .service div {
     background-color: var(--white-900);
-}
+} */
 
 .service .service-card {
     padding: 48px 24px;
@@ -173,10 +173,10 @@ main .main-img img{
 
 
 /* about img */
-
+/* 
 .aboutus div {
     background-color: var(--white-900);
-}
+} */
 
 .aboutus {
     margin-top: 48px;
@@ -269,10 +269,10 @@ padding: 48px;
 }
 
 /* menu */
-
+/* 
 .menu div {
     background-color: var(--white-900);
-}
+} */
 
 .menu {
     padding-top: 50px;

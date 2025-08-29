@@ -22,7 +22,7 @@
 @media (max-width:1199px){
     .container{
         background-color: pink;
-        max-width: 960;
+        max-width: 960px;
     }
 }
 

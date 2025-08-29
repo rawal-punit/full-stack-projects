@@ -32,25 +32,6 @@
         max-width: 720px;
     }
 
-    .col-md-6{
-        width: 50%;
-    }
-
-    main .main-content{
-        padding-top: 50px;
-      text-align: center;
-
-    }
-
-    main .main-img{
-        padding: 95px;
-    }
-
-
-    .col-md-12{
-        width: 100%;
-    }
-
     header {
         background-color: var(--darkblue);
         padding: 45px;
@@ -64,8 +45,35 @@
         display: block !important;
     } 
 
+
+
+    main .main-content{
+        padding-top: 50px;
+      text-align: center;
+    }
+
+    main .main-content p{
+        width: 90%;
+        padding-left: 14%;
+    }
+
+    main .main-img{
+        padding: 95px;
+    }
+
+    .col-md-12{
+        width: 100%;
+    }
+    
+    .col-md-6{
+        width: 50%;
+
+    }
+
+
     footer .container{
         padding-left: 50px;
+       
     }
 }
 
@@ -74,10 +82,34 @@
     .container{
         max-width: 540px;
     }
+
+    .col-sm-12{
+        width: 100%;
+    }
+
+    .reservation .reservation-video{
+        height: 450px;
+    }
+
+    main .container{
+        max-width: 100%;
+    }
+
+    footer .container{
+        padding-left: 100px;
+       max-width: 100%;
+    }
+
+
 }
 /* xs */
 @media (max-width:575px){
     .container{
         max-width: 100%;
     }
+
+    .col-xs-12{
+        width: 100%;
+    }
+
 }
