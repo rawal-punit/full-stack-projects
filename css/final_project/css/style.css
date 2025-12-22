@@ -65,6 +65,35 @@ header nav ul+a {
     font-family: var(--font-nunito);
 }
 
+.nav-page{
+    position: relative;
+}
+
+.nav-page:hover .dropdown{
+    display: block;
+}
+
+.dropdown{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    padding: 16px;
+    z-index: 9;
+    /* bottom: -119px; */
+    top: 70px;
+    right: -17px;
+    width: max-content;
+    display: none;
+}
+
+.dropdown p {
+    padding: 8px;
+}
+
+.dropdown p:hover{
+    background-color: rgb(171, 111, 0);
+}
+
 
 
 /* main */
