@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var product=[
+            {
+                title:"",
+                image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHxYft1f_Ln_y_scKnh8-g5rLMmce7JKyPQ&s",
+                price:67889,
+                qty:1
+
+            },
+            {
+                title:"",
+                image:"https://www.freepik.com/free-photos-vectors/animais",
+                price:67889,
+                qty:1
+
+            },
+             {
+                title:"",
+                image:"https://www.istockphoto.com/photos/images-of-mountains",
+                price:67889,
+                qty:1
+
+            },
+             {
+                title:"",
+                image:"https://www.dreamstime.com/photos-images/ka.html",
+                price:67889,
+                qty:1
+
+            },
+             {
+                title:"",
+                image:"https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg",
+                price:67889,
+                qty:1
+
+            }
+        ]
+
+
+
+        product.map((el,i)=>{
+            var div=document.createElement("div")
+            var title=document.createElement("h1")
+            title.innerHTML=el.title
+            var image=document.createElement("img")
+            image.src=el.image
+            var price=document.createElement("p")
+            price.innerHTML=el.price
+             var qty=document.createElement("p")
+            qty.innerHTML=el.qty
+            var button=document.createElement("button")
+            button.innerHTML="add to cart"
+            button.addEventListener("click",()=>{
+                addTocart(el)
+            })
+            div.append(title,image,price,qty,button)
+            document.querySelector("body").append(div)
+
+
+        })
+
+        product=[]
+        function addTocart(el){
+            console.log(el);
+             product.push(el)
+             localStorage.setItem("cart",JSON.stringify(product))
+        }
+    </script>
+</body>
+</html>

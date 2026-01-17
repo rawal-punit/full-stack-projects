@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        var Cart=JSON.parse(localStorage.getItem("cart"))  ||[]
+
+             Cart.map((el,i)=>{
+            
+            var div=document.createElement("div")
+            var title=document.createElement("h1")
+            title.innerHTML=el.title
+            var image=document.createElement("img")
+            image.src=el.image
+            var price=document.createElement("p")
+            price.innerHTML=el.price
+             var qty=document.createElement("p")
+            qty.innerHTML=el.qty
+         
+            var btn=document.createElement("button")
+            btn.innerHTML="+"
+            btn.addEventListener("click",()=>{
+                inc(el)
+            })
+
+            var b=document.createElement("button")
+            b.innerHTML="-"
+            b.addEventListener("click",()=>{
+                dec(el,i)
+            })
+
+            var button=document.createElement("button")
+            button.innerHTML="Delete"
+              button.addEventListener("click",()=>{
+               removeItem(el,i)
+            })
+            
+           div. append(title,image,price,qty,button,btn,b)
+            document.querySelector("body").append(div)
+
+
+        })
+        
+        function removeItem(i){
+        //   console.log(i,1);
+          Cart.splice(i,1)
+        // pro.push(Cart)
+         localStorage.setItem("cart",JSON.stringify(Cart))
+
+        }
+        function inc(el){
+            
+            el.qty++;
+            localStorage.setItem("cart",JSON.stringify(Cart))
+           
+        }
+
+        function dec(el){
+            if(el.qty > 1){
+               el.qty--
+            }
+          
+            localStorage.setItem("cart",JSON.stringify(Cart))
+        }
+
+
+    </script>
+</body>
+</html>

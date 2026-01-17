@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" id="search" placeholder="Search By Name..." onkeyup="applyFilters()">
+
+<select id="sortPrice" onchange="applyFilters()">
+<option value="">Sort by Price</option>
+<option value="low">Low to High</option>
+<option value="high">High to Low</option>
+</select>
+
+<select id="sortName" onchange="applyFilters()">
+<option value="">Sort by Name</option>
+<option value="asc">A -> Z</option>
+<option value="desc">Z -> A</option>
+</select>
+
+<div id="product"></div>
+
+<script>
+const productData = [
+{
+id: 101,
+image: "https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/pointing-devices/ms300/ms300-kbm-04-bk.psd?fmt=pjpg&imwidth=5000",
+name: "Wireless Mouse",
+price: 29.99
+},
+{
+id: 102,
+image: "https://i.rtings.com/assets/pages/xXDZ1p9x/best-rgb-keyboards-20240515-2-medium.jpg",
+name: "Bluetooth Keyboard",
+price: 49.99
+},
+{
+id: 103,
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn-FBRBZcwzJT5TFrN3ELDZ4LmPVnl6AFCLQ&s",
+name: "HD Monitor",
+price: 199.99
+}
+];
+
+let product = JSON.parse(localStorage.getItem("cart")) || [];
+
+function display(productData) {
+let container = document.getElementById("product");
+container.innerHTML = "";
+
+productData.forEach((val) => {
+const div = document.createElement("div");
+
+const img = document.createElement("img");
+img.src = val.image;
+img.style = "width: 200px"
+
+const name = document.createElement("h2");
+name.innerText = val.name;
+
+const price = document.createElement("p");
+price.innerText = "$" + val.price.toFixed(2);
+
+const btn = document.createElement("button");
+btn.innerText = "Add to Cart";
+btn.onclick = () => addToCart(val);
+
+div.append(img, name, price, btn);
+container.append(div);
+});
+}
+
+function addToCart(item) {
+product.push(item);
+localStorage.setItem("cart", JSON.stringify(product));
+}
+
+function applyFilters() {
+let searchText = document.getElementById("search").value.toLowerCase();
+let sortPrice = document.getElementById("sortPrice").value;
+let nameSort = document.getElementById("sortName").value;
+
+let filtered = productData.filter(p =>
+p.name.toLowerCase().includes(searchText)
+);
+
+if (sortPrice === "low") {
+filtered.sort((a, b) => a.price - b.price);
+} else if (sortPrice === "high") {
+filtered.sort((a, b) => b.price - a.price);
+}
+
+if (nameSort === "asc") {
+filtered.sort((a, b) => a.name.localeCompare(b.name));
+} else if (nameSort === "desc") {
+filtered.sort((a, b) => b.name.localeCompare(a.name));
+}
+
+display(filtered);
+}
+
+display(productData);
+</script>
+
+</body>
+</html>
